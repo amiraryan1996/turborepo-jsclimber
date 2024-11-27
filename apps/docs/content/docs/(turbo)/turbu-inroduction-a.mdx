@@ -1,0 +1,60 @@
+---
+title: Turbo Tool Introduction
+description: Turbo a high performance monorepo tool
+icon: FastForward
+---
+
+## Introduction
+
+Turbo is a powerful build tool designed to optimize the development workflow, particularly for JavaScript and TypeScript projects. It significantly speeds up the build process by intelligently caching and parallelizing tasks, making it an essential tool for modern web development.
+
+## Major Code Blocks
+
+### Requirements
+
+To get started, you need to install packages using pnpm. Here are the steps to ensure you have the correct setup:
+
+1. **Install pnpm Package Manager**: First, uninstall any existing version of pnpm and install the suitable version:
+
+   ```package-install
+   npm uninstall pnpm -g
+   npm install pnpm@9.12.0 -g
+   ```
+
+   Pnpm version is specified at root `package.json` packagemanager key:
+
+   ```js
+   {
+   "packageManager": "pnpm@9.12.0"
+   }
+   ```
+
+2. **Node.js Version Requirement**: According to the root `package.json`, the required Node.js version is:
+
+   ```js
+   {
+   "engines": {
+    "node": ">=20.17.0" }
+   }
+   ```
+
+   You can switch to the required Node.js version using nvm:
+
+   ```bash
+   nvm use
+   ```
+
+3. **Install packages**:
+   ```package-install
+   pnpm install
+   ```
+
+## Explore Pnpm and Node.js documents for further informations:
+
+<Cards>
+  <Card title="Introduction to Node.js" href="https://nodejs.org/   " />
+  <Card
+    title="PnPm Fast, disk space efficient package manager"
+    href="https://pnpm.io/"
+  />
+</Cards>
