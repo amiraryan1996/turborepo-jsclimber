@@ -1,20 +1,21 @@
 {
   "name": "turborepo-jsclimber",
+  "description": " leading platform for tech blogging",
   "version": "0.0.0",
   "private": true,
   "license": "",
   "scripts": {
-    "build": "turbo build",
+    "ui": "pnpm --filter @repo/ui ui",
     "dev": "turbo dev",
+    "build": "turbo build",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "ui": "pnpm --filter @repo/ui ui"
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "prettier": "catalog:",
-    "turbo": "2.1.1"
+    "turbo": "latest"
   },
   "packageManager": "pnpm@9.12.0",
   "engines": {
@@ -23,5 +24,9 @@
   "volta": {
     "node": "20.17.0",
     "pnpm": "9.12.0"
-  }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
