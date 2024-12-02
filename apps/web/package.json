@@ -9,21 +9,22 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "react": "catalog:react19",
-    "react-dom": "catalog:react19",
+    "@repo/ui": "workspace:*",
+    "dotenv": "^16.4.5",
     "next": "15.0.3",
-    "@repo/ui": "workspace:*"
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19"
   },
   "devDependencies": {
-    "eslint-config-next": "15.0.3",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/react-dom": "catalog:react19",
-    "@types/react": "catalog:react19",
     "@types/eslint": "catalog:",
     "@types/node": "catalog:",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
     "autoprefixer": "^10",
     "eslint": "catalog:",
+    "eslint-config-next": "15.0.3",
     "postcss": "^8",
     "tailwindcss": "catalog:",
     "typescript": "catalog:"
